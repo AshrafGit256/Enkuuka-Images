@@ -1,0 +1,87 @@
+/* Enkuuka App – Global Styles */
+
+:root {
+  --ion-color-primary: #1A5276;
+  --ion-color-primary-rgb: 26, 82, 118;
+  --ion-color-primary-contrast: #ffffff;
+  --ion-color-primary-shade: #174869;
+  --ion-color-primary-tint: #316385;
+
+  --ion-color-secondary: #D4AC0D;
+  --ion-color-secondary-rgb: 212, 172, 13;
+  --ion-color-secondary-contrast: #1A5276;
+  --ion-color-secondary-shade: #bb970b;
+  --ion-color-secondary-tint: #d8b425;
+
+  --ion-font-family: 'Nunito', 'Segoe UI', sans-serif;
+  --ion-background-color: #F0F4F8;
+  --ion-text-color: #1A2530;
+  --ion-tab-bar-background: #ffffff;
+  --ion-tab-bar-border-color: #D6E4F0;
+  --ion-tab-bar-color: #99A8B8;
+  --ion-tab-bar-color-selected: #1A5276;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  font-family: 'Nunito', 'Segoe UI', sans-serif !important;
+  background: #F0F4F8 !important;
+}
+
+ion-content {
+  --background: #F0F4F8;
+}
+
+ion-tab-bar {
+  --background: #ffffff;
+  border-top: 1px solid #D6E4F0;
+}
+
+ion-tab-button {
+  --color: #99A8B8;
+  --color-selected: #1A5276;
+}
+
+ion-header ion-toolbar {
+  --background: #1A5276;
+  --color: #ffffff;
+  --border-width: 0;
+}
+
+ion-back-button {
+  --color: #ffffff;
+}
+
+::-webkit-scrollbar { width: 0; }
+
+@keyframes wave    { 0%,100%{transform:scaleY(.2)} 50%{transform:scaleY(1)} }
+@keyframes spin    { to{transform:rotate(360deg)} }
+@keyframes slideUp { from{transform:translateY(100%)} to{transform:translateY(0)} }
+@keyframes popIn   { from{opacity:0;transform:scale(.82)} to{opacity:1;transform:scale(1)} }
+@keyframes dot     { 0%,100%{opacity:.25;transform:scale(.6)} 50%{opacity:1;transform:scale(1.2)} }
+@keyframes fadeIn  { from{opacity:0} to{opacity:1} }
+
+button { transition: opacity 0.12s, transform 0.12s; }
+button:active { opacity: 0.75; transform: scale(0.97); }
+
+.pill {
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  padding: 3px 9px;
+  border-radius: 20px;
+  font-family: 'Nunito', sans-serif;
+  text-transform: uppercase;
+  white-space: nowrap;
+  display: inline-block;
+}
+
+.card-hover:hover {
+  border-color: #2E86C1 !important;
+  box-shadow: 0 2px 12px rgba(26,82,118,0.12);
+}
+
+.splash-dot {
+  width: 7px; height: 7px; border-radius: 50%; background: #D4AC0D;
+}
